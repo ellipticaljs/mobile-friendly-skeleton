@@ -19,7 +19,7 @@ bower install
 ##Tasks
 
 ``` bash
-gulp start-live
+gulp start-live-app
 
 ```
 
