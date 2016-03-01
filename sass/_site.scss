@@ -1,0 +1,93 @@
+///site sass project main start file
+
+
+///imports--------------------------------------------
+@import "fonts";
+@import "mixins";
+@import "theme";
+
+
+@include component-theme($touch:$theme);
+@include elliptical-project();
+
+/// fonts ---------------------------------------------
+@include site-fonts();
+
+///variables & colors ---------------------------------
+@import "variables";
+
+
+///sass components --------------------------------------
+@import "sass-components";
+
+
+///typography-----------------------------------------------
+body{
+
+}
+
+///grid -----------------------------------------------------
+
+
+
+///icons------------------------------------------------------
+@include social-icons();
+
+
+///forms------------------------------------------------------
+
+
+///web components---------------------------------------------
+@import "md";
+@import "web-components";
+
+
+
+///custom pages & sections----------------------------------------
+section{
+  &.outer{
+    padding-top:6em;
+    min-height:500px;
+  }
+  &.index{
+    padding-top:80px;
+    min-height:270px;
+    background:map-get($Color,bar);
+    color:#fff;
+
+  }
+}
+
+
+
+///footer----------------------------------------------------------
+@include ui-sticky-footer();
+footer[data-role=footer]{
+   margin-bottom:1em;
+   font-size:14px;
+   padding-top:3em;
+}
+
+
+
+
+///media queries---------------------------------------------------
+@import "media-queries";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
