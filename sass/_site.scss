@@ -22,9 +22,7 @@
 
 
 ///typography-----------------------------------------------
-body{
-
-}
+@import "typography";
 
 ///grid -----------------------------------------------------
 
@@ -43,30 +41,13 @@ body{
 
 
 
-///custom pages & sections----------------------------------------
-section{
-  &.outer{
-    padding-top:6em;
-    min-height:500px;
-  }
-  &.index{
-    padding-top:80px;
-    min-height:270px;
-    background:map-get($Color,bar);
-    color:#fff;
-
-  }
-}
+///content pages & sections----------------------------------------
+@import "content";
 
 
 
 ///footer----------------------------------------------------------
-@include ui-sticky-footer();
-footer[data-role=footer]{
-   margin-bottom:1em;
-   font-size:14px;
-   padding-top:3em;
-}
+@import "footer";
 
 
 
