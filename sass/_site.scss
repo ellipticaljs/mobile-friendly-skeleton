@@ -8,7 +8,7 @@
 
 
 @include component-theme($touch:$theme);
-@include elliptical-project();
+@include elliptical-basic();
 
 /// fonts ---------------------------------------------
 @include site-fonts();
