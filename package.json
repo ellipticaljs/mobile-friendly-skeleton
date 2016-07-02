@@ -1,6 +1,6 @@
 {
   "name": "mobile-friendly-skelton",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "mobile-friendly web components simple starter project",
   "main": "./public/index.html",
   "scripts": {
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "elliptical-gulp": "git+https://github.com/ellipticaljs/gulp.git",
+    "elliptical-scaffold": "git+https://github.com/ellipticaljs/scaffold.git",
     "gulp": "^3.8.7",
     "gulp-util": "^2.2.14",
     "gulp-concat": "^2.2.0",

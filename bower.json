@@ -1,7 +1,7 @@
 {
   "name": "mobile-friendly-skeleton",
   "description": "mobile-friendly simple starter prototype",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "main": "public/index.html",
   "authors": [
     "Scott <sfrancis@misinteractive.com>"
