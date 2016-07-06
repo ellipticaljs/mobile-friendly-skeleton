@@ -1,6 +1,6 @@
 {
   "name": "mobile-friendly-skelton",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "mobile-friendly web components simple starter project",
   "main": "./public/index.html",
   "scripts": {
