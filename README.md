@@ -19,7 +19,9 @@ bower install
 ##Tasks
 
 ``` bash
-gulp app-build
+gulp app-scaffold (optional)
+gulp app-build (optional)
+
 gulp start-app
 
 ```
