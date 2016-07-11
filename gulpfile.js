@@ -57,10 +57,6 @@ gulp.task('app-imports', function () {
     tasks.appImports();
 });
 
-gulp.task('app-scaffold', function () {
-    tasks.appImports();
-});
-
 gulp.task('watch', function () {
     tasks.watch();
 });
@@ -224,7 +220,9 @@ gulp.task('app-provider', function () {
     scaffoldTasks.appCreateProvider(config,params);
 });
 
-
+gulp.task('app-scaffold', function () {
+    scaffoldTasks.appScaffold(config);
+});
 
 /// web component-------------------------------------------------------------------------------------------------------
 gulp.task('web-component', function () {
