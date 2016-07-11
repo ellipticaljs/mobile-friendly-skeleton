@@ -1,0 +1,58 @@
+<style>
+    app-header{
+        width:100%;
+    }
+</style>
+<dom-module id="app-header">
+    <template>
+        <ui-topbar>
+            <touch-drawer>
+                <touch-header>
+                    <ui-search>
+                        <input type="text" placeholder="search">
+                    </ui-search>
+                </touch-header>
+            </touch-drawer>
+            <touch-bar>
+                <ui-toggle></ui-toggle>
+                <ui-brand>
+                    <h4>My Brand</h4>
+                </ui-brand>
+                <touch-icons>
+                    <touch-icon>
+                        <md-more>
+                            <menu-item><a>Sign In</a></menu-item>
+                            <menu-item><a>Sign Up</a></menu-item>
+                        </md-more>
+                    </touch-icon>
+                </touch-icons>
+            </touch-bar>
+            <section class="center">
+                <ui-brand class="left">
+                    <h6>My Brand</h6>
+                </ui-brand>
+                <ui-menu>
+                    <menu-item><a>Link</a></menu-item>
+                    <menu-item><a>Link</a></menu-item>
+                    <menu-item-dropdown><a>Link</a>
+                      <ui-dropdown>
+                          <menu-item><a>Sublink</a></menu-item>
+                          <menu-item><a>Sublink</a></menu-item>
+                          <menu-item><a>Sublink</a></menu-item>
+                      </ui-dropdown>
+                    </menu-item-dropdown>
+                    <menu-item><a>Link</a></menu-item>
+                </ui-menu>
+            </section>
+            <ui-menu class="right">
+                <menu-item><a><span class="hide-for-medium-down inline icon-core-profile"></span><span class="hide-for-desktop">Sign-In</span></a></menu-item>
+                <menu-item><a><span class="hide-for-medium-down icon-core-checkbox"></span><span class="hide-for-desktop">Sign-Up</span></a></menu-item>
+            </ui-menu>
+        </ui-topbar>
+    </template>
+</dom-module>
+<script>
+    Polymer({
+        is:'app-header'
+    });
+</script>

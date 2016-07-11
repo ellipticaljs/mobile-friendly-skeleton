@@ -1,0 +1,55 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../elliptical-polymer-behaviors/component-behavior.html">
+
+
+<dom-module id="ui-input-icon">
+    <template>
+        <input type="text" placeholder="[[placeholder]]" name="[[dataName]]" id="[[dataId]]" icon=[[icon]] role=[[role]]>
+    </template>
+</dom-module>
+
+<script>
+
+    Polymer({
+
+        is: 'ui-input-icon',
+
+        behaviors:[Elliptical.ComponentBehavior],
+
+        properties: {
+            
+        },
+
+        ready:function(){
+            this._setRole();
+            this._setValueProp();
+
+        },
+
+        _setIcon:function(icon){
+            var input=this.element.find('input');
+            input.attr('icon',icon);
+        },
+
+        _setRole:function(){
+            var role=this.getAttribute('role');
+            if(role){
+                var input=this.element.find('input');
+                input.attr('role',role);
+            }
+        },
+
+        _setValueProp:function(){
+            var element=this.element;
+            var node=this;
+            Object.defineProperty(node, 'value', {
+                get: function() { return element.find('input').val(); },
+                set: function(newValue) { element.find('input').val(newValue); },
+                enumerable: true,
+                configurable: true
+            });
+        }
+
+    });
+
+</script>

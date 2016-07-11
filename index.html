@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <title>Prototype</title>
+    <script src="components/webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="components/elliptical-holderjs/holder.js"></script>
+    <link rel="import" href="elements/app-footer/app-footer.html" id="footer-doc">
+    <link rel="import" href="vulcanized/import.html">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+<ui-container class="ui-sticky-footer">
+    <app-header ea-bind="menu"></app-header>
+    <section class="index">
+        <grid-row>
+            <grid-columns class="default-12">
+                <flex-box class="column center">
+                    <h3>Welcome</h3>
+                    <flex-box>
+                        <h5 class="opacity-07">Simple, Responsive Starter</h5>
+                        <h5>&nbsp;Kit</h5>
+                    </flex-box>
+                </flex-box>
+            </grid-columns>
+        </grid-row>
+    </section>
+    <section class="margin-top two">
+        <grid-row>
+            <grid-columns class="default-12">
+                <p>My home page...</p>
+            </grid-columns>
+        </grid-row>
+    </section>
+    <footer data-role="footer" class="margin-top-auto"></footer>
+</ui-container>
+<script src="scripts/footer.js"></script>
+</body>
