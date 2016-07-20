@@ -3634,7 +3634,7 @@ ui-input-addon {
   justify-content: flex-start;
   -webkit-align-items: flex-start;
   align-items: flex-start;
-  margin: 0 0 1em 0;
+  margin: 0;
   position: relative;
   width: 100%;
   align-items: stretch; }
@@ -6120,14 +6120,19 @@ ui-social {
     ui-social[responsive-font] > social-icon a, ui-social[responsive-font] > social-icon span {
       font-size: 32px; } }
 
-section.outer {
-  padding-top: 6em;
-  min-height: 500px; }
 section.index {
   padding-top: 80px;
   min-height: 270px;
   background: #616161;
   color: #fff; }
+
+main {
+  padding-top: 6em;
+  min-height: 500px; }
+  main.index {
+    padding-top: 0;
+    margin-top: 2em;
+    min-height: 0; }
 
 .ui-sticky-footer {
   display: -webkit-flex;
