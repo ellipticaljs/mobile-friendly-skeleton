@@ -248,6 +248,15 @@ gulp.task('web-component', function () {
 ///page ----------------------------------------------------------------------------------------------------------------
 
 gulp.task('page-scaffold', function () {
+    var argv = require('minimist')(process.argv.slice(2));
+    var dir=argv.imageDir;
+    if(dir===undefined){
+        console.log("Error: images directory required");
+        return;
+    }
+    var params={
+        imageDir:dir
+    };
     scaffoldTasks.pageScaffold(config);
 });
 
